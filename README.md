@@ -28,13 +28,21 @@ Note:
 ## Function Get-DatabaseConnections
 This Function will get Ivanti Database Connections.
   Examples:
+```
   $Connections = Get-DatabaseConnections
+
   Get-DatabaseConnections
+```
 
 ## Function Set-DatabaseConnectio
 This Function will Add/Remove a database connection.
   Examples:
+ ```
   Set-DatabaseConnection -DatabaseServer "DBServer\Instance" -DatabaseName "DBname" -Type Management -DatabaseConnectionName "ivanti-Management-test" -LogOnly -Verbose
+
   Set-DatabaseConnection -DatabaseServer "DBServer\Instance" -DatabaseName "DBname" -Type Management -DatabaseConnectionName "ivanti-Management-test" -Verbose
-  Set-DatabaseConnection -DatabaseServer "DatabaseServer" -DatabaseName "Database Name" -Type Personalization -DatabaseConnectionName "ivanti-Pers-test" -AddOnly -Verbose
-  Set-DatabaseConnection -DatabaseServer "DatabaseServer" -DatabaseName "Database Name" -Type Personalization -DatabaseConnectionName "ivanti-Pers-test" -RemoveDatabaseConnection "NEWPS-Database-Conn" -Verbose
+
+Set-DatabaseConnection -DatabaseServer "DatabaseServer" -DatabaseName "Database Name" -Type Personalization -DatabaseConnectionName "ivanti-Pers-test" -AddOnly -Verbose
+  
+Set-DatabaseConnection -DatabaseServer "DatabaseServer" -DatabaseName "Database Name" -Type Personalization -DatabaseConnectionName "ivanti-Pers-test" -RemoveDatabaseConnection "NEWPS-Database-Conn" -Verbose
+```
